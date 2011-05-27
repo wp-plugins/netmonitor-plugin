@@ -19,4 +19,4 @@ NOTE: This plugin requires a NetMonitor account, more information can be found a
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Enter your NetMonitor site-id and choose what to track under 'NetMonitor' in the 'Settings' menu
 1. If you are using a template that calls the wp_footer function (the standard is to do so), you're done!
-1. If your template doesn't call wp_footer you'll have to add `<?php wp_footer(); ?>` just before the </body> tag in you template footer.
+1. If your template doesn't call wp_footer you'll have to add `<?php wp_footer(); ?>` just before the `</body>` tag in you template footer.
