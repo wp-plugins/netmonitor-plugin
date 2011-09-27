@@ -3,7 +3,7 @@
 Plugin Name: NetMonitor Wordpress Plugin
 Plugin URI: http://www.getnetmonitor.com
 Description: Automatically generates a NetMonitor tag for each page and optionally tracks page names and signed in users.
-Version: 1.0
+Version: 1.1
 Author: Developer's Helsinki Ltd.
 Author URI: http://www.developers.fi
 License: GPL2
@@ -46,11 +46,11 @@ function nm_generate_tag() {
 		$user = $current_user->user_login;
 	}
 		
-	if($page) {
+	if ( $page ) {
 		$custom[] = "page: '$page'";
 	}
 	
-	if($user) {
+	if ( $user ) {
 		$custom[] = "user: '$user'";
 	}
 	
@@ -73,8 +73,9 @@ function nm_generate_tag() {
 }
 
 function nm_tag() {
-	if(get_option('nm_id'))
+	if ( get_option('nm_id') && ! isset($_GET['preview']) ) {
 		echo nm_generate_tag();
+	}
 }
 
 
