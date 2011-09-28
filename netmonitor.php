@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: NetMonitor Wordpress Plugin
+Plugin Name: Netmonitor Wordpress Plugin
 Plugin URI: http://www.getnetmonitor.com
-Description: Automatically generates a NetMonitor tag for each page and optionally tracks page names and signed in users.
+Description: Automatically generates a Netmonitor tag for each page and optionally tracks page names and signed in users.
 Version: 1.1
 Author: Developer's Helsinki Ltd.
 Author URI: http://www.developers.fi
@@ -84,7 +84,7 @@ add_action('wp_footer', 'nm_tag', 20);
 // Admin
 
 function nm_admin_actions() {
-	add_options_page("NetMonitor Settings", "NetMonitor", 1, "NetMonitor_tracking", "nm_admin");
+	add_options_page("Netmonitor Settings", "Netmonitor", 1, "Netmonitor_tracking", "nm_admin");
 }
 
 add_action('admin_menu', 'nm_admin_actions');
