@@ -3,7 +3,7 @@
 Plugin Name: Netmonitor Wordpress Plugin
 Plugin URI: http://www.getnetmonitor.com
 Description: Automatically generates a Netmonitor tag for each page and optionally tracks page names and signed in users.
-Version: 1.1
+Version: 1.2
 Author: Developer's Helsinki Ltd.
 Author URI: http://www.developers.fi
 License: GPL2
